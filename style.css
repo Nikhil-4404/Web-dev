@@ -1,23 +1,75 @@
-.box{
-    width:350px;
-    height:400px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    border-radius: 20px;
-    align-items: center;
-    
-}
-
-.maincontainer{
-    display:flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-}
-
-.box1{
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
+*{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: #f3f4f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .app {
+      background: white;
+      border-radius: 20px;
+      max-width: 1200px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      padding: 2rem;
+      gap: 2rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+    .sidebar, .main {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .weather-input {
+      display: flex;
+      gap: 0.5rem;
+    }
+    .weather-input input {
+      flex: 1;
+      padding: 0.75rem;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+    .weather-input button {
+      padding: 0.75rem 1rem;
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .weather-info {
+      text-align: center;
+    }
+    .weather-info h2 {
+      font-size: 3rem;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+    .card {
+      background: #f9fafb;
+      padding: 1rem;
+      border-radius: 12px;
+      text-align: center;
+    }
+    .forecast {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 0.5rem;
+      text-align: center;
+    }
+    .forecast div {
+      background: #f1f5f9;
+      border-radius: 12px;
+      padding: 0.5rem;
+    }
