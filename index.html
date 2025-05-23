@@ -2,47 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Weather App</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App UI</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="app">
-    <div class="sidebar">
-      <div class="weather-input">
-        <input type="text" id="cityInput" placeholder="Search for places...">
-        <button onclick="getWeather()">Search</button>
+  <div class="container">
+    <div class="weather-card">
+      <h1 class="location">Delhi</h1>
+      <div class="weather">
+        <img src="./sunny.png" alt="Sunny" class="weather-icon" />
+        <h2 class="temperature">34°C</h2>
+        <p class="description">Sunny</p>
       </div>
-      <div class="weather-info" id="weatherDisplay">
-        <h2>--°C</h2>
-        <p>Weather condition</p>
-        <p>City, Country</p>
-      </div>
-    </div>
-    <div class="main">
-      <h3>Weekly Forecast</h3>
-      <div class="forecast">
-        <div>Sun<br>☀️<br>15° / 3°</div>
-        <div>Mon<br>🌧️<br>12° / 7°</div>
-        <div>Tue<br>☁️<br>9° / 7°</div>
-        <div>Wed<br>🌧️<br>8° / -1°</div>
-        <div>Thu<br>❄️<br>5° / -2°</div>
-        <div>Fri<br>☀️<br>4° / -4°</div>
-        <div>Sat<br>☀️<br>3° / -3°</div>
-      </div>
-      <h3>Today's Highlights</h3>
-      <div class="cards">
-        <div class="card">UV Index<br><strong>5</strong></div>
-        <div class="card">Wind Status<br><strong>7.70 km/h</strong></div>
-        <div class="card">Sunrise & Sunset<br><strong>6:35 AM / 5:42 PM</strong></div>
-        <div class="card">Humidity<br><strong>12%</strong></div>
-        <div class="card">Visibility<br><strong>5.2 km</strong></div>
-        <div class="card">Air Quality<br><strong>105 (Unhealthy)</strong></div>
+      <div class="details">
+        <div>
+          <p>Humidity</p>
+          <h3>45%</h3>
+        </div>
+        <div>
+          <p>Wind</p>
+          <h3>12 km/h</h3>
+        </div>
+        <div>
+          <p>Pressure</p>
+          <h3>1015 hPa</h3>
+        </div>
       </div>
     </div>
   </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
